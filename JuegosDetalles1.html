@@ -11,88 +11,88 @@
       padding: 0;
     }
     body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
     }
 
     header {
-    background-color: #222;
-    padding: 2vh;
-    text-align: center;
-    color: #fff;
+      background-color: #222;
+      padding: 2vh;
+      text-align: center;
+      color: #fff;
     }
 
     main {
-    padding: 2vh;
-    max-width: 96vh;
-    margin: 0 auto;
+      padding: 2vh;
+      max-width: 96vh;
+      margin: 0 auto;
     }
 
     h1 {
-    font-size: 2.5vh;
-    margin-bottom: 1vh;
+      font-size: 2.5vh;
+      margin-bottom: 1vh;
+    }
+
+    section {
+      margin-bottom: 2vh;
     }
 
     .juego {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 2vh;
-    background-color: #fff;
-    padding: 2vh;
-    border-radius: 1vh;
-    box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-color: #fff;
+      padding: 2vh;
+      border-radius: 1vh;
+      box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.1);
     }
 
     .juego img {
-    max-width: 95%;
-    height: auto;
-    margin-bottom: 1vh;
+      max-width: 95%;
+      height: auto;
+      margin-bottom: 1vh;
     }
 
     .juego h3 {
-    font-size: 1.8vh;
-    margin-bottom: 0.5vh;
+      font-size: 1.8vh;
+      margin-bottom: 0.5vh;
     }
 
     .juego p {
-    font-size: 1.6vh;
-    margin-bottom: 1vh;
+      font-size: 1.6vh;
+      margin-bottom: 1vh;
     }
 
     .juego a {
-    font-size: 1.8vh;
-    color: #007bff;
-    text-decoration: none;
+      font-size: 1.8vh;
+      color: #007bff;
+      text-decoration: none;
     }
 
     .juego a:hover {
-    text-decoration: underline;
+      text-decoration: underline;
     }
 
-    .regresar {
-    font-size: 1.8vh;
-    color: #022243;
-    text-decoration: none;
+    .opiniones-lista {
+      text-align: left;
+      list-style-type: none;
     }
 
     footer {
-    background-color: #222;
-    padding: 2vh;
-    text-align: center;
-    color: #fff;
-    font-size: 1.6vh;
+      background-color: #222;
+      padding: 2vh;
+      text-align: center;
+      color: #fff;
+      font-size: 1.6vh;
     }
 
-    .opiniones-lista {
-    text-align: left;
+    .back-button {
+      font-size: 1.8vh;
+      color: #022243;
+      text-decoration: none;
     }
-    .opiniones-lista {
-    list-style-type: none;
-    }
-
   </style>
 </head>
 <body>
@@ -102,7 +102,7 @@
   <main>
     <section>
       <h2>Detalles del juego</h2>
-      <div class="juego">
+      <article class="juego">
         <img src="https://cdn.leonardo.ai/users/e96c234d-1bf5-48f4-8156-61cda8a0ad38/generations/349bcbb4-25b0-43db-a2de-1cfcb5586453/variations/Default_Halo_Franchise_game_cover_eyecatching_poster_video_gam_1_349bcbb4-25b0-43db-a2de-1cfcb5586453_1.jpg"
           alt="Portada de Halo X (Muy épica)">
         <h3>HALO X</h3>
@@ -116,12 +116,12 @@
         <p><a href="https://store.steampowered.com/app/976730/Halo_The_Master_Chief_Collection/">Comprar juego</a></p>
         <p><a href="#opiniones">Opiniones de otros jugadores</a></p>
         <p><a href="#requisitos">Requerimientos del sistema</a></p>
-      </div>
+      </article>
     </section>
 
     <section id="requisitos">
       <h2>Requerimientos del sistema</h2>
-      <div class="juego">
+      <article class="juego">
         <h3>Requerimientos mínimos</h3>
         <ul class="opiniones-lista">
           <li>Procesador: Intel Core i5-2500K / AMD FX-6300</li>
@@ -139,12 +139,12 @@
           <li>Almacenamiento: 55 GB de espacio disponible</li>
           <li>Sistema operativo: Windows 10</li>
         </ul>
-      </div>
+      </article>
     </section>
 
     <section id="opiniones">
       <h2>Opiniones de otros jugadores</h2>
-      <div class="juego">
+      <article class="juego">
         <h3>Opiniones positivas &#10004;</h3>
         <ul class="opiniones-lista">
           <!-- Opiniones positivas -->
@@ -161,11 +161,9 @@
           <li>&#10006; Los gráficos podrían ser mejores. Esperaba más calidad visual.</li>
           <li>&#10006; No me gustó la jugabilidad. Los controles son complicados.</li>
         </ul>
-      </div>
+      </article>
     </section>
     
-    
-
     <a class="back-button" href="Index.html">Volver al inicio</a>
 
   </main>
