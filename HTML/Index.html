@@ -4,94 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página de inicio - Epic Games Store</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      color: #333;
-    }
-
-    header {
-      background-color: #222;
-      padding: 2vh;
-      text-align: center;
-      color: #fff;
-    }
-
-    main {
-      padding: 2vh;
-      max-width: 100vh;
-      margin: 0 auto;
-    }
-
-    h1 {
-      font-size: 2.5vh;
-      margin-bottom: 1vh;
-    }
-
-    h2 {
-      font-size: 4vh;
-      margin-bottom: 4vh;
-    }
-
-    .juego {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin-bottom: 2vh;
-      background-color: #fff;
-      padding: 2vh;
-      border-radius: 1vh;
-      box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.1);
-    }
-
-    .juego img {
-      max-width: 95%;
-      height: auto;
-      margin-bottom: 1vh;
-    }
-
-    .juego h3 {
-      font-size: 1.8vh;
-      margin-bottom: 0.5vh;
-    }
-
-    .juego p {
-      font-size: 1.6vh;
-      margin-bottom: 1vh;
-    }
-
-    .juego a {
-      font-size: 1.8vh;
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    .juego a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      background-color: #222;
-      padding: 2vh;
-      text-align: center;
-      color: #fff;
-      font-size: 1.6vh;
-    }
-    
-  </style>
+  <link rel="stylesheet" href="../CSS/Index.css">
 </head>
-<body>
+<body id="BodyContenido">
   <header>
     <h1>Epic Games Store</h1>
-    <a id="Sección" href="login.html">Iniciar Sección</a>
+    <nav id="AbreYCierra" class="Navegador">
+      <p>Menú</p>
+      <a href="javascript:void(0)" class="OpenCloseMenu" onclick="CerrarElMenu()">&times;</a>
+      <a href="javascript:void(0)" id="CerrarFuera" class="FueraDelMenu" onclick="CerrarElMenu()"></a>
+      <ul class="Menu_Navegador">
+        <li >
+          <a class="BotonNav" href="login.html">Iniciar Sección</a>
+        </li>
+        <li>
+          <a class="BotonNav" href="registro.html">Regístrate</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="OpenCloseMenu" href="javascript:void(0)" onclick="AbrirElMenu()">&#9776;</a>
+
   </header>
 
   <main>
@@ -123,5 +55,8 @@
   <footer>
     <p>&copy; 2023 Epic Games. Todos los derechos reservados.</p>
   </footer>
+  <script src="../JS/Index.js"></script>
+
 </body>
+
 </html>

@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(242, 242, 242);
+    color: #333;
+  }
+
+  header {
+    background-color: rgba(34, 34, 34);
+    padding: 2vh;
+    text-align: center;
+    color: #fff;
+  }
+
+  main {
+    padding: 2vh;
+    max-width: 100vh;
+    margin: 0 auto;
+    
+  }
+
+  h1 {
+    font-size: 2.5vh;
+    margin-bottom: 1vh;
+  }
+
+  h2 {
+    font-size: 4vh;
+    margin-bottom: 4vh;
+  }
+
+  .juego {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2vh;
+    border-radius: 1vh;
+    box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.1);
+  }
+
+  .juego img {
+    max-width: 95%;
+    height: auto;
+    margin-bottom: 1vh;
+  }
+
+  .juego h3 {
+    font-size: 1.8vh;
+    margin-bottom: 0.5vh;
+  }
+
+  .juego p {
+    font-size: 1.6vh;
+    margin-bottom: 1vh;
+  }
+
+  .juego a {
+    font-size: 1.8vh;
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .juego a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    background-color: #222;
+    padding: 2vh;
+    text-align: center;
+    color: #fff;
+    font-size: 1.6vh;
+  }
+
+  .Menu_Navegador a{
+    font-size: 1.8vh;
+    color: #ADADAD;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .Menu_Navegador a:hover{
+    color: #6E6E6E;
+  }
+
+
+
+  .OpenCloseMenu {
+    font-size: 3vh;
+    cursor: pointer;
+    color: #ADADAD;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2vh;
+  }
+  .OpenCloseMenu:hover{
+    color: #6E6E6E;
+  }
+
+  .FueraDelMenu{
+    height: 100%;
+    width: 0%;
+    background-color:rgb(34, 34, 34);
+    opacity: 0.3;
+    position: fixed;
+    transition-delay: 0.48s;
+    left: 16vh;
+    top: 0;
+  }
+
+  .Navegador {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  
+
+  @media screen and (max-height: 450px) {
+    .Navegador {padding-top: 15px;}
+    .Navegador a {font-size: 18px;}
+  }
