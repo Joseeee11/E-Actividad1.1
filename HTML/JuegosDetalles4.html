@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de detalles - Epic Games Store</title>
+  <link rel="stylesheet" href="../CSS/PagDetalles.css">
+  <link rel="stylesheet" href="../CSS/NavDesplegable.css">
+
+</head>
+<body>
+  <header>
+    <h1>Epic Games Store</h1>
+    <nav id="AbreYCierra" class="Navegador">
+      <p>Menú</p>
+      <a href="javascript:void(0)" class="OpenCloseMenu" onclick="CerrarElMenu()">&times;</a>
+      <a href="javascript:void(0)" id="CerrarFuera" class="FueraDelMenu" onclick="CerrarElMenu()"></a>
+      <ul class="Menu_Navegador">
+        <li>
+          <a class="BotonNav" href="login.html">Iniciar Sesión</a>
+        </li>
+        <li>
+          <a class="BotonNav" href="registro.html">Regístrate</a>
+        </li>
+      </ul>
+      <ul class="ContenidoNav">
+        <li>
+          <a href="../HTML/Index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="#">Recomendados</a>
+        </li>
+        <li>
+          <a href="#">ECT</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="OpenCloseMenu" id="OpenMenu" href="javascript:void(0)" onclick="AbrirElMenu()">&#9776;</a>
+
+  </header>
+  <main>
+    <section>
+      <h2>Detalles del juego</h2>
+      <article class="juego">
+        <div class="ContenedorJuego">
+          <div class="Mostrandohow-container">
+            <div class="ContenedorMultimedia fade">
+              <img src="https://i.blogs.es/b8737e/gta-v-1_dv57/1366_2000.jpeg" alt="Portada de GTA V (Muy épica)">
+            </div>
+
+            <div class="ContenedorMultimedia fade">
+              <iframe src="https://www.youtube.com/embed/qJvhm1Ia7yo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          
+            <a class="Anterior" onclick="CambiarIMG(-1)">❮</a>
+            <a class="Siguiente" onclick="CambiarIMG(1)">❯</a>
+            <div style="text-align:center">
+              <span class="decoracion" onclick="currentSlide(1)"></span> 
+              <span class="decoracion" onclick="currentSlide(2)"></span> 
+            </div>
+          </div>
+
+          <div class="Textoo">
+            <h3>GTA V</h3>
+            <div class="scrollSiEsNecesario">
+              <p>¡Vive la vida de un criminal en GTA V! Embárcate en un emocionante mundo abierto lleno de acción, aventuras y posibilidades ilimitadas. Únete a tres personajes principales, Michael, Franklin y Trevor, mientras se involucran en una serie de misiones peligrosas y emocionantes en la vibrante ciudad de Los Santos. Explora un vasto mapa, disfruta de una historia cautivadora y desafía las leyes en este icónico juego de mundo abierto. Con gráficos impresionantes, un amplio arsenal de armas y vehículos, y un modo multijugador masivo, GTA V te proporcionará una experiencia de juego única y llena de adrenalina.</p>
+            </div>
+            <div class="centrarLinks">
+              <a class="centrarLinksA" href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/">Comprar juego</a>
+              <a class="centrarLinksA" href="#opiniones">Opiniones de otros jugadores</a>
+              <a class="centrarLinksA" href="#requisitos">Requisitos del sistema</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="requisitos">
+      <h2>Requisitos del sistema</h2>
+      
+      <article class="juego">
+        <div class="RequisitosContenedor">
+          <div class="Requisitos Minimos">
+            <h3>Requerimientos mínimos</h3>
+            <ul class="opiniones-lista">
+              <li>Procesador: Intel Core i5-3470 / AMD FX-8350</li>
+              <li>Memoria: 8 GB de RAM</li>
+              <li>Gráficos: Nvidia GeForce GTX 660 / AMD Radeon HD 7870</li>
+              <li>Almacenamiento: 100 GB de espacio disponible</li>
+              <li>Sistema operativo: Windows 10</li>
+            </ul>
+          </div>
+          <span class="EspacioSimple"> </span>
+          <div class="Requisitos Recomendados">
+            <h3>Requerimientos recomendados</h3>
+            <ul class="opiniones-lista">
+              <li>Procesador: Intel Core i7-4770K / AMD Ryzen 5 1500X</li>
+              <li>Memoria: 16 GB de RAM</li>
+              <li>Gráficos: Nvidia GeForce GTX 1060 / AMD Radeon RX 580</li>
+              <li>Almacenamiento: 100 GB de espacio disponible</li>
+              <li>Sistema operativo: Windows 10</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="opiniones">
+      <h2>Opiniones de otros jugadores</h2>
+
+      <article class="juego">
+        <div class="opiniones">
+          <div class="opinion Positiva"> 
+            <h3>Opiniones positivas &#10004;</h3>
+            <ul class="opiniones-lista">
+              <li>&#10004; <strong>GamerMaster3000:</strong> ¡El juego es increíble! Me encanta la libertad y la inmensidad del mundo.</li>
+              <li>&#10004; <strong>ProGamer99:</strong> Una experiencia épica de principio a fin. Los gráficos y las misiones son impresionantes.</li>
+              <li>&#10004; <strong>GTAFanatic:</strong> Nunca me canso de jugar GTA V. Siempre hay algo nuevo por descubrir y hacer.</li>
+            </ul>
+          </div>
+          <span class="EspacioSimple"> </span>
+          <div class="opinion Negativa">
+            <h3>Opiniones negativas &#10060;</h3>
+            <ul class="opiniones-lista">
+              <li>&#10060; <strong>NoobPlayer123:</strong> El juego tiene demasiada violencia y contenido inapropiado.</li>
+              <li>&#10060; <strong>GamerGirlXOXO:</strong> Me decepcionó el modo multijugador. Esperaba más opciones y actividades.</li>
+              <li>&#10060; <strong>CasualGamer78:</strong> Los controles son complicados de dominar, lo que dificulta la jugabilidad.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="../JS/Nav.js"></script>
+  <script src="../JS/ImagenCambia.js"></script>
+</body>
+</html>

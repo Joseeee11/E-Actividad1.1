@@ -6,6 +6,7 @@
   <title>Página de detalles - Epic Games Store</title>
   <link rel="stylesheet" href="../CSS/PagDetalles.css">
   <link rel="stylesheet" href="../CSS/NavDesplegable.css">
+
 </head>
 <body>
   <header>
@@ -41,85 +42,124 @@
     <section>
       <h2>Detalles del juego</h2>
       <article class="juego">
-        <img src="https://cdn.leonardo.ai/users/e96c234d-1bf5-48f4-8156-61cda8a0ad38/generations/7c0aa1ca-ced0-45ba-a4d3-9dda282042b3/variations/Default_Stardew_Valley_game_cover_eye_catching_poster_video_ga_0_7c0aa1ca-ced0-45ba-a4d3-9dda282042b3_1.jpg"
-          alt="Portada de Stardew Valley (Muy épica)">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/ASlkM-mf1zk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <h3>Stardew Valley</h3>
-        <p>Embárcate en una aventura agrícola en Stardew Valley, un encantador juego de simulación de granjas. Heredas una granja
-          antigua de tu abuelo en el valle de Stardew y decides comenzar una nueva vida cultivando la tierra y criando animales.
-          Convierte una parcela descuidada en una próspera granja, participa en la vida del pueblo, haz amistades con los
-          residentes y descubre los misterios ocultos del valle. Disfruta de la pacífica vida rural mientras cultivas cultivos,
-          cuidas de tus animales, exploras las minas, pescas, participas en festivales y más. Stardew Valley te brinda la
-          libertad de crear tu propia historia y disfrutar de un ambiente relajado y encantador. ¡Prepárate para sumergirte en
-          este maravilloso mundo de granjas y descubrimientos!</p>
-        <p><a href="https://store.steampowered.com/app/413150/Stardew_Valley/">Comprar juego</a></p>
-        <p><a href="#opiniones">Opiniones de otros jugadores</a></p>
-        <p><a href="#requisitos">Requerimientos del sistema</a></p>
+        <div class="ContenedorJuego">
+          <div class="Mostrandohow-container">
+            <div class="ContenedorMultimedia fade">
+              <img src="https://cdn.leonardo.ai/users/e96c234d-1bf5-48f4-8156-61cda8a0ad38/generations/7c0aa1ca-ced0-45ba-a4d3-9dda282042b3/variations/Default_Stardew_Valley_game_cover_eye_catching_poster_video_ga_0_7c0aa1ca-ced0-45ba-a4d3-9dda282042b3_1.jpg"
+              alt="Portada de Stardew Valley (Muy épica)">
+          
+          </div>
+          <div class="ContenedorMultimedia fade">
+            <iframe src="https://www.youtube.com/embed/ASlkM-mf1zk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          
+            <a class="Anterior" onclick="CambiarIMG(-1)">❮</a>
+            <a class="Siguiente" onclick="CambiarIMG(1)">❯</a>
+          <div style="text-align:center">
+            <span class="decoracion" onclick="currentSlide(1)"></span> 
+            <span class="decoracion" onclick="currentSlide(2)"></span> 
+<!--             <span class="decoracion" onclick="currentSlide(3)"></span> 
+            <span class="decoracion" onclick="currentSlide(4)"></span> 	 -->
+          </div>
+          </div>
+
+
+          <div class="Textoo">
+            <h3>Stardew Valley</h3>
+            <div class="scrollSiEsNecesario">
+            <p>Embárcate en una aventura agrícola en Stardew Valley, un encantador juego de simulación de granjas. Heredas una granja
+              antigua de tu abuelo en el valle de Stardew y decides comenzar una nueva vida cultivando la tierra y criando animales.
+              Convierte una parcela descuidada en una próspera granja, participa en la vida del pueblo, haz amistades con los
+              residentes y descubre los misterios ocultos del valle. Disfruta de la pacífica vida rural mientras cultivas cultivos,
+              cuidas de tus animales, exploras las minas, pescas, participas en festivales y más. Stardew Valley te brinda la
+              libertad de crear tu propia historia y disfrutar de un ambiente relajado y encantador. ¡Prepárate para sumergirte en
+              este maravilloso mundo de granjas y descubrimientos!</p>
+            </div>
+            <div class="centrarLinks">
+              <a class="centrarLinksA" href="https://store.steampowered.com/app/413150/Stardew_Valley/">Comprar juego</a>
+              <a class="centrarLinksA" href="#opiniones">Opiniones de otros jugadores</a>
+              <a class="centrarLinksA" href="#requisitos">Requerimientos del sistema</a>
+            </div>
+
+          </div>
+        
+
+        </div>
+        
       </article>
     </section>
 
     <section id="requisitos">
       <h2>Requerimientos del sistema</h2>
-      <article class="juego">
-        <h3>Requerimientos mínimos</h3>
-        <ul class="opiniones-lista">
-          <li>Procesador: Intel Core 2 Duo E8400 / AMD Phenom II X2 550</li>
-          <li>Memoria: 2 GB de RAM</li>
-          <li>Gráficos: Tarjeta gráfica con 256 MB de video RAM, shader model 3.0+</li>
-          <li>Almacenamiento: 500 MB de espacio disponible</li>
-          <li>Sistema operativo: Windows 7/8/10</li>
-        </ul>
-    
-        <h3>Requerimientos recomendados</h3>
-        <ul class="opiniones-lista">
-          <li>Procesador: Intel Core i5 / AMD FX</li>
-          <li>Memoria: 4 GB de RAM</li>
-          <li>Gráficos: Tarjeta gráfica con 512 MB de video RAM, shader model 4.0+</li>
-          <li>Almacenamiento: 500 MB de espacio disponible</li>
-          <li>Sistema operativo: Windows 10</li>
-        </ul>
+      
+        <article class="juego">
+
+          <div class="RequisitosContenedor">
+          <div class="Requisitos Minimos">
+            <h3>Requerimientos mínimos</h3>
+            <ul class="opiniones-lista">
+              <li>Procesador: Intel Core 2 Duo E8400 / AMD Phenom II X2 550</li>
+              <li>Memoria: 2 GB de RAM</li>
+              <li>Gráficos: Tarjeta gráfica con 256 MB de video RAM, shader model 3.0+</li>
+              <li>Almacenamiento: 500 MB de espacio disponible</li>
+              <li>Sistema operativo: Windows 7/8/10</li>
+            </ul>
+          </div>
+          <span class="EspacioSimple"> </span>
+          <div class="Requisitos Recomendados">
+            <h3>Requerimientos recomendados</h3>
+            <ul class="opiniones-lista">
+              <li>Procesador: Intel Core i5 / AMD FX</li>
+              <li>Memoria: 4 GB de RAM</li>
+              <li>Gráficos: Tarjeta gráfica con 512 MB de video RAM, shader model 4.0+</li>
+              <li>Almacenamiento: 500 MB de espacio disponible</li>
+              <li>Sistema operativo: Windows 10</li>
+            </ul>
+          </div>
+
       </article>
+      </div>
+      
+      
     </section>
 
     <section id="opiniones">
       <h2>Opiniones de otros jugadores</h2>
+
       <article class="juego">
-        <h3>Opiniones positivas &#10004;</h3>
-        <ul class="opiniones-lista">
-          <!-- Opiniones positivas -->
-          <li>&#10004; <strong>Carlos87:</strong> ¡Este juego es adictivo! Me encanta la tranquilidad de la vida en la granja.</li>
-          <li>&#10004; <strong>AnaGamer:</strong> Los gráficos son encantadores y la música es relajante. Una experiencia muy agradable.</li>
-          <li>&#10004; <strong>Juanito2000:</strong> Hay tantas cosas por descubrir y hacer. Nunca me canso de jugarlo.</li>
-          <li>&#10004; <strong>Laura_Flower:</strong> Me encanta interactuar con los personajes del pueblo y construir relaciones.</li>
-          <li>&#10004; <strong>GamerDoge:</strong> 10/10 would farm again, such crops, much fun!</li>
-        </ul>
-    
-        <h3>Opiniones negativas &#10006;</h3>
-        <ul class="opiniones-lista">
-          <!-- Opiniones negativas -->
-          <li>&#10006;<strong>Player123:</strong> Me aburrí después de jugarlo por un tiempo. No hay suficiente variedad de actividades.</li>
+        <div class="opiniones">
+          <div class="opinion Positiva"> 
+            <h3>Opiniones positivas &#10004;</h3>
+            <ul class="opiniones-lista">
+              <li>&#10004; <strong>Carlos87:</strong> ¡Este juego es adictivo! Me encanta la tranquilidad de la vida en la granja.</li>
+              <li>&#10004; <strong>AnaGamer:</strong> Los gráficos son encantadores y la música es relajante. Una experiencia muy agradable.</li>
+              <li>&#10004; <strong>Juanito2000:</strong> Hay tantas cosas por descubrir y hacer. Nunca me canso de jugarlo.</li>
+              <li>&#10004; <strong>Laura_Flower:</strong> Me encanta interactuar con los personajes del pueblo y construir relaciones.</li>
+              <li>&#10004; <strong>GamerDoge:</strong> 10/10 would farm again, such crops, much fun!</li>
+            </ul>
+            <span class="EspacioSimple"> </span>
+          </div>
+          <div class="opinion Negativa"> 
+            <h3>Opiniones negativas &#10006;</h3>
+            <ul class="opiniones-lista">
+              <li>&#10006;<strong>Player123:</strong> Me aburrí después de jugarlo por un tiempo. No hay suficiente variedad de actividades.</li>
           <li>&#10006;<strong>GamerPro456:</strong> Los controles son un poco incómodos y toma tiempo acostumbrarse.</li>
           <li>&#10006;<strong>MarinaFish:</strong> No me gustó la mecánica de pesca. Fue difícil de dominar.</li>
-        </ul>
+            </ul>
+          </div>
+  
+        </div>
+
       </article>
     </section>
-    
-    
-    <a class="back-button" href="Index.html">Volver al inicio</a>
+
 
   </main>
-  <aside>
-    <h2>Promoción de juego: Rimworld</h2>
-    <article class="juego">
-      <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/294100/header.jpg" alt="Portada de Rimworld">
-      <h3>Rimworld</h3>
-      <p>RimWorld es un juego de construcción y gestión de colonias con una jugabilidad enfocada en la narrativa. Los jugadores deben gestionar a los colonos que han aterrizado en un planeta alienígena y ayudarles a sobrevivir y prosperar. El juego presenta una amplia gama de desafíos, desde la construcción de estructuras y la gestión de recursos hasta el combate con otras facciones y la interacción con eventos aleatorios. Con un enfoque en la simulación y la toma de decisiones, RimWorld ofrece una experiencia única en cada partida y permite a los jugadores crear historias fascinantes.</p>
-      <p><a href="JuegosDetalles3.html">Ver mas...</a></p>
-    </article>
-  </aside>
+
   <footer>
     <p>&copy; 2023 Epic Games. Todos los derechos reservados.</p>
   </footer>
-  <script src="../JS/Index.js"></script>
+  <script src="../JS/Nav.js"></script>
+  <script src="../JS/ImagenCambia.js"></script>
 </body>
 </html>
