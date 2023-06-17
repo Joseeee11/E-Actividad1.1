@@ -5,81 +5,157 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página de detalles - Epic Games Store</title>
   <link rel="stylesheet" href="../CSS/PagDetalles.css">
+  <link rel="stylesheet" href="../CSS/NavDesplegable.css">
+
 </head>
 <body>
   <header>
     <h1>Epic Games Store</h1>
+    <nav id="AbreYCierra" class="Navegador">
+      <p>Menú</p>
+      <a href="javascript:void(0)" class="OpenCloseMenu" onclick="CerrarElMenu()">&times;</a>
+      <a href="javascript:void(0)" id="CerrarFuera" class="FueraDelMenu" onclick="CerrarElMenu()"></a>
+      <ul class="Menu_Navegador">
+        <li >
+          <a class="BotonNav" href="login.html">Iniciar Sección</a>
+        </li>
+        <li>
+          <a class="BotonNav" href="registro.html">Regístrate</a>
+        </li>
+      </ul>
+      <ul class="ContenidoNav">
+        <li>
+          <a href="../HTML/Index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="#">Recomendados</a>
+        </li>
+        <li>
+          <a href="#">ECT</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="OpenCloseMenu" id="OpenMenu" href="javascript:void(0)" onclick="AbrirElMenu()">&#9776;</a>
+
   </header>
   <main>
     <section>
       <h2>Detalles del juego</h2>
       <article class="juego">
-        <img src="https://cdn.leonardo.ai/users/e96c234d-1bf5-48f4-8156-61cda8a0ad38/generations/349bcbb4-25b0-43db-a2de-1cfcb5586453/variations/Default_Halo_Franchise_game_cover_eyecatching_poster_video_gam_1_349bcbb4-25b0-43db-a2de-1cfcb5586453_1.jpg"
-          alt="Portada de Halo X (Muy épica)">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/qJvhm1Ia7yo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <h3>HALO X</h3>
-        <p>¡Descubre la legendaria saga de Halo! Sumérgete en un emocionante universo de ciencia ficción y acción desenfrenada
-          con el juego que ha cautivado a millones de jugadores en todo el mundo. Únete al icónico héroe, el Jefe Maestro, en su
-          misión para proteger la humanidad de amenazas alienígenas y desentrañar los secretos de un misterioso anillo
-          alienígena. Con gráficos impresionantes, una jugabilidad adictiva y una historia épica, Halo te transportará a un
-          universo lleno de combates intensos, armas futuristas y un multijugador competitivo que pondrá a prueba tus
-          habilidades. ¿Estás listo para convertirte en un Spartan y luchar por la supervivencia de la humanidad? Prepárate
-          para vivir una experiencia inolvidable con el juego de Halo.</p>
-        <p><a href="https://store.steampowered.com/app/976730/Halo_The_Master_Chief_Collection/">Comprar juego</a></p>
-        <p><a href="#opiniones">Opiniones de otros jugadores</a></p>
-        <p><a href="#requisitos">Requerimientos del sistema</a></p>
+        <div class="ContenedorJuego">
+          <div class="Mostrandohow-container">
+            <div class="ContenedorMultimedia fade">
+              <img src="https://cdn.leonardo.ai/users/e96c234d-1bf5-48f4-8156-61cda8a0ad38/generations/349bcbb4-25b0-43db-a2de-1cfcb5586453/variations/Default_Halo_Franchise_game_cover_eyecatching_poster_video_gam_1_349bcbb4-25b0-43db-a2de-1cfcb5586453_1.jpg"
+              alt="Portada de Halo X (Muy épica)">
+          
+          </div>
+          <div class="ContenedorMultimedia fade">
+            <iframe src="https://www.youtube.com/embed/qJvhm1Ia7yo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          
+            <a class="Anterior" onclick="CambiarIMG(-1)">❮</a>
+            <a class="Siguiente" onclick="CambiarIMG(1)">❯</a>
+          <div style="text-align:center">
+            <span class="decoracion" onclick="currentSlide(1)"></span> 
+            <span class="decoracion" onclick="currentSlide(2)"></span> 
+            <span class="decoracion" onclick="currentSlide(3)"></span> 
+            <span class="decoracion" onclick="currentSlide(4)"></span> 	
+          </div>
+          </div>
+
+
+          <div class="Textoo">
+            <h3>HALO X</h3>
+            <div class="scrollSiEsNecesario">
+            <p>¡Descubre la legendaria saga de Halo! Sumérgete en un emocionante universo de ciencia ficción y acción desenfrenada
+            con el juego que ha cautivado a millones de jugadores en todo el mundo. Únete al icónico héroe, el Jefe Maestro, en su
+            misión para proteger la humanidad de amenazas alienígenas y desentrañar los secretos de un misterioso anillo
+            alienígena. Con gráficos impresionantes, una jugabilidad adictiva y una historia épica, Halo te transportará a un
+            universo lleno de combates intensos, armas futuristas y un multijugador competitivo que pondrá a prueba tus
+            habilidades. ¿Estás listo para convertirte en un Spartan y luchar por la supervivencia de la humanidad? Prepárate
+            para vivir una experiencia inolvidable con el juego de Halo.</p>
+            </div>
+            <div class="centrarLinks">
+              <a class="centrarLinksA" href="https://store.steampowered.com/app/976730/Halo_The_Master_Chief_Collection/">Comprar juego</a>
+              <a class="centrarLinksA" href="#opiniones">Opiniones de otros jugadores</a>
+              <a class="centrarLinksA" href="#requisitos">Requerimientos del sistema</a>
+            </div>
+
+          </div>
+        
+
+        </div>
+        
       </article>
     </section>
 
     <section id="requisitos">
       <h2>Requerimientos del sistema</h2>
-      <article class="juego">
-        <h3>Requerimientos mínimos</h3>
-        <ul class="opiniones-lista">
-          <li>Procesador: Intel Core i5-2500K / AMD FX-6300</li>
-          <li>Memoria: 8 GB de RAM</li>
-          <li>Gráficos: Nvidia GeForce GTX 770 / AMD Radeon R9 380</li>
-          <li>Almacenamiento: 55 GB de espacio disponible</li>
-          <li>Sistema operativo: Windows 10</li>
-        </ul>
-    
-        <h3>Requerimientos recomendados</h3>
-        <ul class="opiniones-lista">
-          <li>Procesador: Intel Core i7-4770K / AMD Ryzen 5 1500X</li>
-          <li>Memoria: 16 GB de RAM</li>
-          <li>Gráficos: Nvidia GeForce GTX 1060 / AMD Radeon RX 580</li>
-          <li>Almacenamiento: 55 GB de espacio disponible</li>
-          <li>Sistema operativo: Windows 10</li>
-        </ul>
+      
+        <article class="juego">
+
+          <div class="RequisitosContenedor">
+          <div class="Requisitos Minimos">
+            <h3>Requerimientos mínimos</h3>
+            <ul class="opiniones-lista">
+              <li>Procesador: Intel Core i5-2500K / AMD FX-6300</li>
+              <li>Memoria: 8 GB de RAM</li>
+              <li>Gráficos: Nvidia GeForce GTX 770 / AMD Radeon R9 380</li>
+              <li>Almacenamiento: 55 GB de espacio disponible</li>
+              <li>Sistema operativo: Windows 10</li>
+            </ul>
+          </div>
+          <span class="EspacioSimple"> </span>
+          <div class="Requisitos Recomendados">
+            <h3>Requerimientos recomendados</h3>
+            <ul class="opiniones-lista">
+              <li>Procesador: Intel Core i7-4770K / AMD Ryzen 5 1500X</li>
+              <li>Memoria: 16 GB de RAM</li>
+              <li>Gráficos: Nvidia GeForce GTX 1060 / AMD Radeon RX 580</li>
+              <li>Almacenamiento: 55 GB de espacio disponible</li>
+              <li>Sistema operativo: Windows 10</li>
+            </ul>
+          </div>
+
       </article>
+      </div>
+      
+      
     </section>
 
     <section id="opiniones">
       <h2>Opiniones de otros jugadores</h2>
+
       <article class="juego">
-        <h3>Opiniones positivas &#10004;</h3>
-        <ul class="opiniones-lista">
-          <!-- Opiniones positivas -->
-          <li>&#10004; <strong>GamerMaster3000:</strong> ¡Me encanta este juego! La historia y los gráficos son increíbles. Definitivamente lo recomendaría.</li>
-          <li>&#10004; <strong>ProGamer99:</strong> Una experiencia épica de principio a fin. No puedo dejar de jugar.</li>
-          <li>&#10004; <strong>HaloFanatic:</strong> Los combates son emocionantes y el multijugador es adictivo.</li>
-          <li>&#10004; <strong>SciFiExplorer:</strong> El universo de Halo es asombroso. Cada detalle está cuidado.</li>
-          <li>&#10004; <strong>JokerGamer:</strong> This game made me laugh like a maniac. It's a blast!</li>
-          <li>&#10004; <strong>UnicornGamer:</strong> I feel like a majestic unicorn while playing this game. Best gaming experience ever!</li>
-        </ul>
-    
-        <h3>Opiniones negativas &#10006;</h3>
-        <ul class="opiniones-lista">
-          <!-- Opiniones negativas -->
-          <li>&#10006; <strong>DisappointedPlayer:</strong> No cumplió con mis expectativas. Me pareció repetitivo y aburrido.</li>
-          <li>&#10006; <strong>PixelArtFan:</strong> Los gráficos podrían ser mejores. Esperaba más calidad visual.</li>
-          <li>&#10006; <strong>ClumsyGamer:</strong> No me gustó la jugabilidad. Los controles son complicados.</li>
-        </ul>
+        <div class="opiniones">
+          <div class="opinion Positiva"> 
+            <h3>Opiniones positivas &#10004;</h3>
+            <ul class="opiniones-lista">
+              <!-- Opiniones positivas -->
+              <li>&#10004; <strong>GamerMaster3000:</strong> ¡Me encanta este juego! La historia y los gráficos son increíbles. Definitivamente lo recomendaría.</li>
+              <li>&#10004; <strong>ProGamer99:</strong> Una experiencia épica de principio a fin. No puedo dejar de jugar.</li>
+              <li>&#10004; <strong>HaloFanatic:</strong> Los combates son emocionantes y el multijugador es adictivo.</li>
+              <li>&#10004; <strong>SciFiExplorer:</strong> El universo de Halo es asombroso. Cada detalle está cuidado.</li>
+              <li>&#10004; <strong>JokerGamer:</strong> This game made me laugh like a maniac. It's a blast!</li>
+              <li>&#10004; <strong>UnicornGamer:</strong> I feel like a majestic unicorn while playing this game. Best gaming experience ever!</li>
+            </ul>
+            <span class="EspacioSimple"> </span>
+          </div>
+          <div class="opinion Negativa"> 
+            <h3>Opiniones negativas &#10006;</h3>
+            <ul class="opiniones-lista">
+              <!-- Opiniones negativas -->
+              <li>&#10006; <strong>DisappointedPlayer:</strong> No cumplió con mis expectativas. Me pareció repetitivo y aburrido.</li>
+              <li>&#10006; <strong>PixelArtFan:</strong> Los gráficos podrían ser mejores. Esperaba más calidad visual.</li>
+              <li>&#10006; <strong>ClumsyGamer:</strong> No me gustó la jugabilidad. Los controles son complicados.</li>
+            </ul>
+          </div>
+  
+        </div>
+
       </article>
     </section>
-    
-    
-    <a class="back-button" href="Index.html">Volver al inicio</a>
+
 
   </main>
   <aside>
@@ -94,5 +170,7 @@
   <footer>
     <p>&copy; 2023 Epic Games. Todos los derechos reservados.</p>
   </footer>
+  <script src="../JS/Nav.js"></script>
+  <script src="../JS/ImagenCambia.js"></script>
 </body>
 </html>

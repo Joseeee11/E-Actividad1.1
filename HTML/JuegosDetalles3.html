@@ -5,10 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página de detalles - Epic Games Store</title>
   <link rel="stylesheet" href="../CSS/PagDetalles.css">
+  <link rel="stylesheet" href="../CSS/NavDesplegable.css">
 </head>
 <body>
   <header>
     <h1>Epic Games Store</h1>
+    <nav id="AbreYCierra" class="Navegador">
+      <p>Menú</p>
+      <a href="javascript:void(0)" class="OpenCloseMenu" onclick="CerrarElMenu()">&times;</a>
+      <a href="javascript:void(0)" id="CerrarFuera" class="FueraDelMenu" onclick="CerrarElMenu()"></a>
+      <ul class="Menu_Navegador">
+        <li >
+          <a class="BotonNav" href="login.html">Iniciar Sección</a>
+        </li>
+        <li>
+          <a class="BotonNav" href="registro.html">Regístrate</a>
+        </li>
+      </ul>
+      <ul class="ContenidoNav">
+        <li>
+          <a href="../HTML/Index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="#">Recomendados</a>
+        </li>
+        <li>
+          <a href="#">ECT</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="OpenCloseMenu" id="OpenMenu" href="javascript:void(0)" onclick="AbrirElMenu()">&#9776;</a>
+
   </header>
   <main>
     <section>
@@ -81,5 +108,6 @@
   <footer>
     &copy; 2023 Epic Games Store. Todos los derechos reservados.
   </footer>
+  <script src="../JS/Index.js"></script>
 </body>
 </html>

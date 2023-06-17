@@ -124,7 +124,7 @@
   
   .ContenedorTotal{
     height: auto;
-    width: auto;
+    width: 50vh;
     padding: 5vh;
     background-color: #fff;
     border: 1px solid #ccc;

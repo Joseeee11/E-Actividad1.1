@@ -47,3 +47,64 @@ function AbrirElMenu() {
       
     }
   }
+
+
+
+  
+  Filtro("Todos")
+function Filtro(c) {
+  var x, i;
+  x = document.getElementsByClassName("Fila");
+  
+  if (c == "Todos") c = "";
+  for (i = 0; i < x.length; i++) {
+    QuitarLoQueNoVa(x[i], "Mostrar");
+    if (x[i].className.indexOf(c) > -1) {
+      busquedaDiabloQueSueñoCargo(x[i], "Mostrar");
+    }
+  }
+}
+
+
+function busquedaDiabloQueSueñoCargo(elemento, name) {
+  var i, arr1, arr2;
+
+  arr1 = elemento.className.split(" ");
+  
+  arr2 = name.split(" ");
+  
+  for (i = 0; i < arr2.length; i++) {
+    
+    if (arr1.indexOf(arr2[i]) == -1) {
+      elemento.className += " " + arr2[i];
+    }
+  }
+}
+
+function QuitarLoQueNoVa(elemento, name) {
+  var i, arr1, arr2;
+  arr1 = elemento.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  elemento.className = arr1.join(" ");
+
+}
+
+
+
+var botonContenedor = document.getElementById("FitroColador3000");
+var botones = botonContenedor.getElementsByClassName("Boton");
+for (var i = 0; i < botones.length; i++) {
+  botones[i].addEventListener("click", function(){
+    var loQueSeMuestra = document.getElementsByClassName("activoPapi");
+    
+    loQueSeMuestra[0].className = loQueSeMuestra[0].className.replace(" activoPapi", "");
+
+    this.className += " activoPapi";
+    
+  });
+}
