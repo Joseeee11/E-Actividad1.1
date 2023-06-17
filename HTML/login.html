@@ -5,34 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iniciar sesión - Epic Games Store</title>
   <link rel="stylesheet" href="../CSS/LogRegis.css">
+  <link rel="stylesheet" href="../CSS/NavDesplegable.css">
 </head>
 <body>
   <header>
     <h1>Epic Games Store</h1>
+    <nav id="AbreYCierra" class="Navegador">
+      <p>Menú</p>
+      <a href="javascript:void(0)" class="OpenCloseMenu" onclick="CerrarElMenu()">&times;</a>
+      <a href="javascript:void(0)" id="CerrarFuera" class="FueraDelMenu" onclick="CerrarElMenu()"></a>
+      <ul class="Menu_Navegador">
+        <li >
+          <a class="BotonNav" href="login.html">Iniciar Sección</a>
+        </li>
+        <li>
+          <a class="" href="registro.html">Regístrate</a>
+        </li>
+      </ul>
+      <ul class="ContenidoNav">
+        <li>
+          <a href="../HTML/Index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="#">Recomendados</a>
+        </li>
+        <li>
+          <a href="#">ECT</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="OpenCloseMenu" href="javascript:void(0)" onclick="AbrirElMenu()">&#9776;</a>
+
   </header>
 
   <main>
-    <section>
-      <h2>Iniciar sesión</h2>
-      <form>
-        <div class="entrada">
-          <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="entrada">
-          <label for="password">Contraseña:</label>
-          <input type="password" id="password" name="password" required>
-        </div>
-        
-          <button type="submit">Iniciar sesión</button>
-        
-      </form>
-      <p>No tienes una cuenta? <a href="registro.html">Regístrate aquí</a>.</p>
-    </section>
+    <div class="lava-lamp">
+      <div class="ContenedorTotal">
+        <section>
+          <h2>Iniciar sesión</h2>
+          <form>
+            <div class="entrada">
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="entrada">
+              <label for="password">Contraseña:</label>
+              <input type="password" id="password" name="password" required>
+            </div>
+            
+              <button type="submit">Iniciar sesión</button>
+            
+          </form>
+          <p>No tienes una cuenta? <a href="registro.html">Regístrate aquí</a>.</p>
+        </section>
+      </div>
+    </div>
+    
   </main>
-  <a href="Index.html">Volver a inicio</a>
   <footer>
     <p>&copy; 2023 Epic Games. Todos los derechos reservados.</p>
   </footer>
+  <script src="../JS/Index.js"></script>
 </body>
 </html>

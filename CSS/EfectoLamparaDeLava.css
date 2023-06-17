@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  main {
+    width: 100%;
+    height: 100%;
+    
+    perspective: 800px;
+  }
+  
+.lava-lamp {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .lava-lamp .circle {
+    position: fixed;
+    top: -40%;
+    left: calc(5% - 50vh);
+    width: 50vh;
+    height: 50vh;
+    border-radius: 50%;
+    background-color: #162433;
+    animation: lavaLamp 40s ease-in-out infinite;
+    filter: blur(30px);
+    opacity: 0.6;
+    mix-blend-mode: screen;
+    margin: 30vh;
+  }
+  
+  @keyframes lavaLamp {
+    0% {
+      top: -40%;
+    }
+    50% {
+      top: 100%;
+    }
+    100% {
+      top: -40%;
+    }
+  }
+  
+  .lava-lamp .circle:nth-child(2) {
+    left: calc(30% - 25vh);
+    animation-duration: 60s;
+    background-color: #1B2D40;
+    filter: blur(40px);
+    opacity: 0.5;
+  }
+  
+  .lava-lamp .circle:nth-child(3) {
+    left: calc(70% - 25vh);
+    animation-duration: 50s;
+    background-color: #375A80;
+    filter: blur(50px);
+    opacity: 0.4;
+  }
+  
+  /* Agrega más estilos para los círculos adicionales aquí */
