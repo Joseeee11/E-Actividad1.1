@@ -37,12 +37,12 @@ function AbrirElMenu() {
       Disponibles[i].style.display = "none";
     }
   
-    Disponibles[OrdenMostrar-1].style.display = "block";
+    Disponibles[OrdenMostrar-1].style.display = "flex";
     if (Disponibles[OrdenMostrar]) {
-      Disponibles[OrdenMostrar].style.display = "block";
+      Disponibles[OrdenMostrar].style.display = "flex";
     }
     if (!Disponibles[OrdenMostrar]) {
-      Disponibles[0].style.display = "block";
+      Disponibles[0].style.display = "flex";
       document.getElementsByClassName("DestacadosSeccion")[0].style.flexDirection = "row-reverse";
       
     }

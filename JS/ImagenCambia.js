@@ -22,6 +22,6 @@ function MostrandoContenido(n) {
   for (i = 0; i < decoracions.length; i++) {
     decoracions[i].className = decoracions[i].className.replace(" activo", "");
   }
-  Mostrando[CuentaDeDondeVa-1].style.display = "block";  
+  Mostrando[CuentaDeDondeVa-1].style.display = "flex";  
   decoracions[CuentaDeDondeVa-1].className += " activo";
 }
