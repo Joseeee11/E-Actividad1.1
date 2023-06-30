@@ -6,13 +6,16 @@ formElemnt.addEventListener("submit", (event) =>{
     let passwordForm= document.getElementById("password").value
     let iniciar = { emailForm:emailForm, passwordForm:passwordForm };
     let iniciarJson= JSON.stringify(iniciar)
-    
+    console.log(iniciarJson);
     fetch('http://localhost:3000/login',{
-        "body": iniciarJson,
-        method:"Post"
-        
+        method: 'Post',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: iniciarJson,
+        mode: 'cors' // Agrega esta opción
     })
         
-        .then(x=> console.log("holaaa"))
+        
 })
     
